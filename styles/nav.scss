@@ -25,14 +25,20 @@
 }
 
 .nav {
+  // position: absolute;
+  // top: 0;
+  height: 60px;
   display: flex;
   width: 100%;
   justify-content: space-between;
+  background-color: white;
 }
 
 .nav__image {
+  padding-left: 20px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .nav__left, .nav__right {
