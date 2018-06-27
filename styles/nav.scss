@@ -5,15 +5,16 @@
   color: $--black-color;
   font-family: 'Playfair Display', serif;
   font-size: 16px;
-  display: none;
   transition: 50ms all;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  white-space: nowrap;
   &:hover {
     color: $--main-color;
   }
-  @include for-tablet-landscape-up {
-    margin: 0 10px;
-    display: unset;
-  }
+  margin: 0 10px;
   @include for-desktop-up {
     margin: 0 20px;
   }
@@ -37,4 +38,13 @@
 .nav__left, .nav__right {
   display: flex;
   align-items: center;
+}
+
+.nav__left {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+}
+
+.nav__left::-webkit-scrollbar {
+  display: none;
 }
