@@ -1,0 +1,40 @@
+@import '_variables';
+
+.nav__option {
+  text-decoration: none;
+  color: $--black-color;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  display: none;
+  transition: 50ms all;
+  &:hover {
+    color: $--main-color;
+  }
+  @include for-tablet-landscape-up {
+    margin: 0 10px;
+    display: unset;
+  }
+  @include for-desktop-up {
+    margin: 0 20px;
+  }
+}
+
+.nav__option-active {
+  color: $--main-color;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav__image {
+  width: 40px;
+  height: 40px;
+}
+
+.nav__left, .nav__right {
+  display: flex;
+  align-items: center;
+}
