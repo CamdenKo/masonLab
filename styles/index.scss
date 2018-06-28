@@ -1,7 +1,11 @@
+@import '_variables';
+@import '_animations';
+
 #particles-js {
   position: absolute;
   width: 100%;
-  height: calc(100% - 60px);
+  height: 100%;
+  top: 0;
   background-color: #b61924;
   background-image: url("");
   background-repeat: no-repeat;
@@ -12,4 +16,57 @@
 
 body {
   margin: 0;
+}
+
+.title {
+  height: calc(100vh - 60px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title__main {
+  font-family: 'Playfair Display', serif;
+  color: $--white-color;
+  font-size: 50px;
+  margin: 0;
+  @include for-tablet-portrait-up {
+    font-size: 100px;
+  }
+}
+
+.title__secondary {
+  font-family: 'Open Sans', sans-serif;
+  color: $--white-color;
+  font-weight: 300;
+  font-size: 10px;
+  margin: 10px 20px;
+  text-align: center;
+  @include for-tablet-portrait-up {
+    font-size: 20px;
+  }
+}
+
+.scroll__text {
+  color: $--white-color;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.scroll {
+  transform: rotate(90deg);
+  position: absolute;
+  right: 30px;
+  top: 85vh;
+}
+
+
+.scroll__bar {
+  border-top: 2px solid $--white-color;
+  width: 50px;
+  margin-top: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: grow-left cubic-bezier(0.785, .135, .15, .86) 1.3s forwards infinite;
 }

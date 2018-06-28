@@ -20,3 +20,12 @@ $--primary-font-family: 'Playfair Display';
 @mixin for-big-desktop-up {
   @media (min-width: 1800px) { @content; }
 }
+
+// @keyframes grow-down {
+//   from {
+//     transform: scaleY(0);
+//   }
+//   to {
+//     transform: scaleY(1);
+//   }
+// }
