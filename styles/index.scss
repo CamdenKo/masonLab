@@ -68,5 +68,23 @@ body {
   margin-top: 2px;
   transform: scaleX(0);
   transform-origin: left;
-  animation: grow-left cubic-bezier(0.785, .135, .15, .86) 1.3s forwards infinite;
+  animation: grow-left cubic-bezier(0.785, .135, .15, .46) 1.4s forwards infinite;
+}
+
+.body__titletext {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.definition {
+  background-color: white;
+}
+
+.definition__word {
+  text-align: center;
+  font-family: $--primary-font-family;
+  padding: $--small-whitespace;
+}
+
+.definition__word-light {
+  font-weight: 400;
 }

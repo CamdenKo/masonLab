@@ -3,7 +3,9 @@ $--secondary-color: #155f83;
 $--accent-color: #ffa319;
 $--black-color: #382f2d;
 $--white-color: #d6d6ce;
-$--primary-font-family: 'Playfair Display';
+$--background-color: #F6F6F6;
+$--primary-font-family: 'Playfair Display', serif;
+$--small-whitespace: 15px;
 
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
