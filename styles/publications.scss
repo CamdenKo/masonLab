@@ -1,0 +1,27 @@
+@import '_variables';
+
+.banner-publications {
+  background-image: url('../images/PublishedBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.publication__link {
+  font-family: $--primary-font-family;
+  color: black;
+  text-decoration: none;
+}
+
+.publication__description {
+  font-family: $--secondary-font-family;
+}
+
+.publication {
+  list-style-type: none;
+  padding: 0;
+}
+
+.publication__item {
+  margin: $--large-whitespace 0;
+}

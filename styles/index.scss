@@ -14,29 +14,6 @@
   z-index: -11;
 }
 
-body {
-  margin: 0;
-}
-
-.title {
-  height: calc(100vh - 60px);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.title__main {
-  font-family: $--primary-font-family;
-  color: $--white-color;
-  font-size: 50px;
-  margin: 0;
-  @include for-tablet-portrait-up {
-    font-size: 100px;
-  }
-}
-
 .title__secondary {
   font-family: $--secondary-font-family;
   color: $--white-color;
