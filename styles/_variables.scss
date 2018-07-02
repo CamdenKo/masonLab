@@ -5,7 +5,10 @@ $--black-color: #382f2d;
 $--white-color: #d6d6ce;
 $--background-color: #F6F6F6;
 $--primary-font-family: 'Playfair Display', serif;
+$--secondary-font-family: 'Open Sans', sans-serif;
 $--small-whitespace: 15px;
+$--medium-whitespace: 30px;
+$--large-whitespace: 60px;
 
 @mixin for-phone-only {
   @media (max-width: 599px) { @content; }
@@ -22,12 +25,3 @@ $--small-whitespace: 15px;
 @mixin for-big-desktop-up {
   @media (min-width: 1800px) { @content; }
 }
-
-// @keyframes grow-down {
-//   from {
-//     transform: scaleY(0);
-//   }
-//   to {
-//     transform: scaleY(1);
-//   }
-// }

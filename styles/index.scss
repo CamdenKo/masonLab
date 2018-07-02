@@ -28,7 +28,7 @@ body {
 }
 
 .title__main {
-  font-family: 'Playfair Display', serif;
+  font-family: $--primary-font-family;
   color: $--white-color;
   font-size: 50px;
   margin: 0;
@@ -38,7 +38,7 @@ body {
 }
 
 .title__secondary {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $--secondary-font-family;
   color: $--white-color;
   font-weight: 300;
   font-size: 10px;
@@ -51,7 +51,7 @@ body {
 
 .scroll__text {
   color: $--white-color;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $--secondary-font-family;
 }
 
 .scroll {
@@ -72,19 +72,53 @@ body {
 }
 
 .body__titletext {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $--secondary-font-family;
+  margin: 0;
+  padding: $--medium-whitespace;
+}
+
+.body__bodytext {
+  font-family: $--secondary-font-family;
+  padding: $--small-whitespace;
+  margin: 0;
 }
 
 .definition {
   background-color: white;
+  margin: $--small-whitespace 0;
 }
 
 .definition__word {
   text-align: center;
   font-family: $--primary-font-family;
   padding: $--small-whitespace;
+  margin: 0;
 }
 
 .definition__word-light {
   font-weight: 400;
+}
+
+.definition__definition {
+  font-family: $--secondary-font-family;
+  padding: $--small-whitespace;
+  margin: 0;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  @include for-tablet-portrait-up {
+    flex-direction: row;
+  }
+}
+
+.video__text {
+  font-family: $--secondary-font-family;
+  margin: 0;
+  margin-top: $--medium-whitespace;
+}
+.video__video {
+  padding: $--small-whitespace;
 }
