@@ -48,18 +48,6 @@
   animation: grow-left cubic-bezier(0.785, .135, .15, .46) 1.4s forwards infinite;
 }
 
-.body__titletext {
-  font-family: $--secondary-font-family;
-  margin: 0;
-  padding: $--medium-whitespace;
-}
-
-.body__bodytext {
-  font-family: $--secondary-font-family;
-  padding: $--small-whitespace;
-  margin: 0;
-}
-
 .definition {
   background-color: white;
   margin: $--small-whitespace 0;

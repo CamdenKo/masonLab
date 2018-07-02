@@ -19,6 +19,18 @@
   padding-right: 15px;
 }
 
+.body__titletext {
+  font-family: $--secondary-font-family;
+  margin: 0;
+  padding: $--medium-whitespace;
+}
+
+.body__bodytext {
+  font-family: $--secondary-font-family;
+  padding: $--small-whitespace;
+  margin: 0;
+}
+
 .banner {
   height: calc(100vh - 40px);
   display: flex;

@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "parcel index.html Publications.html"
+    "start": "parcel index.html"
   },
   "devDependencies": {
     "node-sass": "^4.9.0"

@@ -1,0 +1,40 @@
+@import '_variables';
+
+.banner-teams {
+  background-image: url('../images/Team.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.members {
+  list-style-type: none;
+  padding: 0;
+}
+
+.members__single {
+  margin: $--small-whitespace;
+  display: flex;
+  align-items: center;
+}
+
+.members__name {
+  margin: 0 $--large-whitespace;
+  font-family: $--secondary-font-family;
+}
+
+.members__picture {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    max-height: 100%;
+  }
+}
+
+.members__header {
+  font-family: $--primary-font-family;
+}
