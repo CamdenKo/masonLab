@@ -1,0 +1,36 @@
+@import '_variables';
+
+.banner-contact {
+  background-image: url('../images/BabyRats.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title__main-nowrap {
+  text-align: center;
+  line-height: 50px;
+  @include for-tablet-portrait-up {
+    line-height: 92px;
+  }
+}
+
+.title__main-bold {
+  font-family: $--secondary-font-family;
+  font-weight: bold;
+}
+
+.body__hugetext {
+  text-align: center;
+  font-family: $--primary-font-family;
+  font-size: 40px;
+}
+
+.body__titletext-inline {
+  margin: 0;
+  padding: 0;
+}
+
+.body__titletext-center {
+  text-align: center;
+}

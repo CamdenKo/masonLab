@@ -2,6 +2,7 @@
 
 .maincontent {
   padding-top: 20px;
+  padding-bottom: 20px;
   background-color: $--background-color;
   @include for-tablet-landscape-up {
     padding-top: 40px;
